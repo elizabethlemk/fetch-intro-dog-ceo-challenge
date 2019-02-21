@@ -1,3 +1,6 @@
+
+
+
 console.log('%c HI', 'color: firebrick')
 // Styling
 
@@ -7,15 +10,21 @@ document.querySelector('#dog-image-container').style.marginLeft = "auto"
 document.querySelector('#dog-image-container').style.marginRight = "auto"
 document.querySelector('#dog-image-container').padding = "5px"
 document.querySelector("ul").style.listStyleType = "none"
-document.querySelector("h1").style.fontSize = "80px"
+document.querySelector("h1").style.fontSize = "140px"
+document.querySelector("h1").style.color = "white"
+document.querySelector("h1").style.fontFamily = "Indie Flower"
+
+document.querySelector("h1").style.textShadow = "0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073";
 
 function changeOffHover (event) {
-  // event.target.style.color = 'black';
-  event.target.style.textShadow = "none"
+  event.target.style.color = 'black';
+  event.target.style.fontSize = '40px';
+  // event.target.style.textShadow = "none"
 }
 
 function changeOnHover(event) {
-  event.target.style.textShadow = "0 0 10px #fff, 0 0 20px #fff, 0 0 30px #875d55, 0 0 40px #875d55, 0 0 50px #875d55, 0 0 60px #875d55, 0 0 70px #875d55";
+  event.target.style.fontSize = '50px';
+  // event.target.style.textShadow = "0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073";
 }
 
 
@@ -38,7 +47,7 @@ function addImgToContainer(img) {
   newImg.style.width = "24.3%"
   newImg.style.marginLeft = "auto"
   newImg.style.marginRight = "auto"
-  newImg.style.height = "230px"
+  newImg.style.height = "290px"
   newImg.style.padding = "2px"
   newImg.style.size = "cover"
   newImg.style.backgroundPosition = "50% 50%"
